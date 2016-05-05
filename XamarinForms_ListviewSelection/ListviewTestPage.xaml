@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinForms_ListviewSelection.ListviewTestPage">
+	<ContentPage.Content>
+		<StackLayout Padding ="20">
+			<ListView x:Name="EmployeeListview" HasUnevenRows="true">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+								<BoxView Color="{Binding BoxColor}" HorizontalOptions="Start" VerticalOptions="Center"/>
+								<Label Text="{Binding Name}" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+								<Label Text="{Binding Job}" TextColor="Blue"  HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+			<Label x:Name="CurrentSelection" Text="No one is selected"/>
+			<Button x:Name="buttonWhoIsSelected" Clicked="WhoIsSelected" Text="Who is Selected?" BackgroundColor="Silver" TextColor="Black" Opacity="0.75"/>
+			<Button x:Name="buttonSelectSecondEmp" Clicked="SelectSecondEmp" Text="Select Second Employee" BackgroundColor="Silver" TextColor="Black"  Opacity="0.75"/>
+			<Button x:Name="buttonSelectNone" Clicked="SelectNone" Text="Unselect Employee" BackgroundColor="Silver" TextColor="Black" Opacity="0.75"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
