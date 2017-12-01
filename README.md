@@ -13,10 +13,15 @@ Using Xamarin Forms and a Listview, demonstrating various way to select and unse
 <h3>Useful Links</h3>
 
 <h5>Xamarin ListView Docs & Samples</h5>
+
 - https://developer.xamarin.com/guides/xamarin-forms/user-interface/listview/
+
 - https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/
+
 - https://developer.xamarin.com/samples/xamarin-forms/UserInterface/ListView/interactivity/
+
 - https://github.com/xamarin/xamarin-forms-samples/tree/master/UserInterface/ListView/Interactivity
 
 <h5>Label animation was copied from</h5>
+
 - http://xfcomplete.net/animation/2016/01/18/compound-animations/
